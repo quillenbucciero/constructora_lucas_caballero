@@ -82,7 +82,7 @@ header h3 {
 }
 .inicio-item {
     letter-spacing: 1px;
-    font-size: 25px;
+    font-size: 20px;
     padding: 3%; 
 }
 .inicio-item h1 {
@@ -175,13 +175,16 @@ header h3 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
     background-color: black;
+    align-items: center;
 
 }
+
 .info-contacto {
-    text-align: center;
     margin: 3%;
-    
+    width: 30%;
+    text-align: center;
 }
 .info-contacto h2 {
     font-size: 35px;
@@ -190,12 +193,12 @@ header h3 {
 }
 .info-contacto h3 {
     font-size: 25px;
-    margin: 10%;
-    color: white;
+    margin: 15%;
+    color: rgb(255, 255, 255);
 }
 
 .info-contacto h3 a {
-    color: rgba(255, 251, 251, 0.959);
+    color: rgba(255, 251, 251, 0.801);
 }
 .info-contacto p, p a{
     font-size: 20px;
@@ -209,21 +212,77 @@ header h3 {
     border-radius: 25px;
 }
 
+/*formulario*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    padding: 3%;
+    margin-top: 3%;
+    text-align: center;
+}
+
+input {
+    font-family: 'Rubik', sans-serif;
+    border-radius: 25px;
+    border-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 3px #999;
+    font-size: 20px;
+    padding: 4px;
+    margin-top: 10%;
+}
+textarea {
+    font-family: 'Rubik', sans-serif;
+    border-radius: 25px;
+    border-color: 3px rgb(255, 255, 255);
+    box-shadow: 2px 2px 3px #999;
+    font-size: 20px;
+    padding: 4px;
+    margin-top: 10%;
+}
+
+button {
+    background-color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 3px #999;
+    border: 0px;
+    border-radius: 25px;
+    padding: 5%;
+    font-size: 30px;
+    color: white;
+    margin-top: 10%;
+}
 
 /* footer*/ 
 
 footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     padding: 1%;
     background-color: rgb(0, 0, 0);
     width: 100%;
-    justify-content: space-around;
+    text-align: center;
 }
-
-.iconos-footer i{
+.iconos-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.iconos-footer i {
     font-size: 25px;
     color: white;
-    padding: 5px;
+    letter-spacing: 15px;
+    margin-left: 15px;
+}
+
+.iconos-footer p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.788);
+    letter-spacing: 1px;
+}
+#copy{
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 3px;
+    color: rgba(255, 255, 255, 0.788);
 }
