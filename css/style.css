@@ -10,11 +10,11 @@ li {
 }
 h2 {
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 body, a {
-    font-family:'Josefin Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
     text-decoration: none;
     color: black;
 }
@@ -36,12 +36,12 @@ header h3 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: flex-end;
+    align-items:center;
 
 }
 
 .menu li {
-    margin-right: 15px;
+    margin-right: 30px;
     justify-content: space-around;
 }
 .menu a {
@@ -75,15 +75,19 @@ header h3 {
 
 /*inicio*/
 
+.inicio-contenedor {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
 .inicio-item {
     letter-spacing: 1px;
-    font-size: 25px; 
-    margin: 20%;
+    font-size: 25px;
+    padding: 3%; 
 }
-
 .inicio-item h1 {
     letter-spacing: 1px;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 
@@ -96,24 +100,74 @@ header h3 {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.87);
     align-items: center;
+    margin-top: 5%;
+}
+
+.img-nosotros img {
+    margin-right: -50px;
+}
+.texto-nosotros {
+    width: 35%;
+    color: white;
+    
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.texto-nosotros h2 {
+    letter-spacing: 1px;
+    margin: 1%;
+    margin-top: 5%;
+    
+}
+.texto-nosotros p {
     margin-top: 10%;
 }
-
-.nosotros article img {
-    box-shadow: 2px 2px 3px #999;
-}
-
-
-.nosotros article {
-    width: 40%;
+.texto-nosotros hr {
+    width: 150px;
     color: white;
-    margin: 2%;
-    font-size: 25px;
-    letter-spacing: 1px;
+    margin-block-end: 10%;
 }
-.nosotros article h2 {
-    letter-spacing: 1px;
-    margin: 10% ;
+
+/* servicios */ 
+
+.servicios-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    padding: 3%;
+}
+
+.servicios {
+    width: 26%;
+    padding: 4px ;
+    box-shadow: 2px 2px 3px #999;
+    border-radius: 3%;
+    margin-top: 1%;
+}
+
+.servicios img {
+    width: 160px;
+    border-radius: 3%;
+}
+
+.servicios p {
+    font-size: 14px;
+}
+.servicios h4 {
+    margin: 1.5%;
+}
+.servicios-hr {
+    width: 120px;
+    height: 4px;
+    color: rgb(0, 0, 0);
+    background-color: black;
+    border-radius: 25px;
+}
+.servicios-h2 {
+    font-size: 40px;
+    margin-top: 10%;
 }
 
 /* contacto*/
@@ -121,28 +175,39 @@ header h3 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    background-color: black;
+
+}
+.info-contacto {
+    text-align: center;
+    margin: 3%;
     
-}.info-contacto {
-    margin: 2.5%;
-    background-color: rgba(87, 87, 87, 0.445) ;
-    border-radius: 50px;
 }
 .info-contacto h2 {
-    font-size: 40px;
+    font-size: 35px;
+    margin-top: 10%;
+    color: white;
 }
 .info-contacto h3 {
-    font-size: 30px;
+    font-size: 25px;
+    margin: 10%;
+    color: white;
 }
 
 .info-contacto h3 a {
-    color: grey;
+    color: rgba(255, 251, 251, 0.959);
 }
-.info-contacto p{
-    font-size: 25px;
+.info-contacto p, p a{
+    font-size: 20px;
+    color: white;
 }
-
-
+.contacto-hr {
+    width: 120px;
+    height: 4px;
+    color: rgb(255, 255, 255);
+    background-color:white ;
+    border-radius: 25px;
+}
 
 
 /* footer*/ 
@@ -158,7 +223,7 @@ footer {
 }
 
 .iconos-footer i{
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     padding: 5px;
 }
